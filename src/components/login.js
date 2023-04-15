@@ -13,11 +13,12 @@ function Login() {
   return (
     <div className="signin-container">
       <div className="signin-logo">
+    
         <h1 className='span'>Enter your email address</h1>
         <br />
         <p className='span'>Type your email to log in or create a ComicBay account.</p>
       </div>
-      <form className="signin-form" onSubmit={handleSubmit}>
+      <form className="signin-form" onSubmit={handleSubmit} >
         <div className='form-group'>
 
           <input
@@ -40,8 +41,14 @@ function Login() {
           <label>Enter password</label>
         </div>
         <br />
+        <div>
         <div className='two_buttons'>
-        <button type="submit">Sign In</button>
+            <a href="" class = "button">Sign in</a>
+            <a href="" class = "buttonn">Sign in</a>
+
+        </div>
+       
+       
     
         </div>
       </form>

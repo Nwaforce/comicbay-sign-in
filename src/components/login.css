@@ -57,6 +57,7 @@
       
 }
   
+
   .signin-logo {
     display: flex;
     flex-direction: column;
@@ -98,18 +99,55 @@
   }
   
   .signin-form button {
-    padding: 19px 80px;
-    background-color: #FFF500;
-    color: #000000;
-    border-radius: 0.25rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    width: 356px;
-    height: 52px;
+   display: flex;
+   text-align: center;
+
   }
-  
-  .signin-form button:hover {
-    background-color: #dadd15;
-  } 
-  
+
+  .button{
+    --background-color: yellow;
+    --background-color: #000;
+
+    display: inline-block;
+    margin: 30px 0;
+    padding: 10px 130px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: yellow;
+    box-shadow: 6px 6px 0 #000;
+    border-radius: 5px;
+  }
+
+  .button:active{
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 4px 4px 0 var(--background-color-dark);
+  }
+
+  .buttonn{
+    --background-color: yellow;
+    --background-color: #000;
+
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 130px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fafafa;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid yellow;
+    box-shadow: 6px 6px 0 #000;
+    border-radius: 5px;
+  }
+
+  .buttonn:active{
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 4px 4px 0 var(--background-color-dark);
+  }
