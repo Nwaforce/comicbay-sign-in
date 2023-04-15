@@ -5,9 +5,34 @@ function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (event) => {
+fetch('https://comic-bay-api.onrendr.com/api/v1/auth/register')
+
+
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
     
+
+
+    try {
+        const response = await  fetch('https://comic-bay-api.onrendr.com/api/v1/auth/register',{
+        
+            method: "POST",
+      body: JSON.stringify({ username, password }),
+     headers: {
+       "Content-Type": "application/json",
+   },
+  }
+  );
+
+  const data = await response.json();
+  console.log(data);
+
+
+
+    } catch (error) {
+        
+    }
   }
 
   return (
@@ -44,7 +69,7 @@ function Login() {
         <div>
         <div className='two_buttons'>
             <a href="" class = "button">Sign in</a>
-            <a href="" class = "buttonn">Sign in</a>
+            <a href="" class = "buttonn">Sign up</a>
 
         </div>
        
